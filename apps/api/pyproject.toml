@@ -113,6 +113,7 @@ module = [
     "modules.integration.*",
     "modules.ecommerce.*",
     "modules.portal.*",
+    "modules.vendor_portal.*",
     "security.jwt",
     "security.password",
     "security.rbac",
