@@ -47,6 +47,7 @@ celery_app.autodiscover_tasks(
         "modules.ecommerce",
         "modules.portal",
         "modules.vendor_portal",
+        "modules.bpm",
     ],
     related_name="tasks",
     force=True,
