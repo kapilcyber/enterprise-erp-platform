@@ -15,6 +15,7 @@ from modules.helpdesk.router import helpdesk_router
 from modules.hr.router import hr_router
 from modules.integration.router import integration_router
 from modules.inventory.router import inventory_router
+from modules.lowcode.router import lowcode_router
 from modules.manufacturing.router import manufacturing_router
 from modules.master_data.router import master_data_router
 from modules.organization.router import organization_router
@@ -56,3 +57,4 @@ api_v1_router.include_router(ecommerce_router)
 api_v1_router.include_router(portal_router)
 api_v1_router.include_router(vendor_portal_router)
 api_v1_router.include_router(bpm_router)
+api_v1_router.include_router(lowcode_router)

@@ -117,6 +117,7 @@ module = [
     "modules.portal.*",
     "modules.vendor_portal.*",
     "modules.bpm.*",
+    "modules.lowcode.*",
     "security.jwt",
     "security.password",
     "security.rbac",
