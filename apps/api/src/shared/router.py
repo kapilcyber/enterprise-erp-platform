@@ -2,6 +2,7 @@
 
 from fastapi import APIRouter
 
+from modules.ai.router import ai_router
 from modules.analytics.router import analytics_router
 from modules.asset.router import asset_router
 from modules.bpm.router import bpm_router
@@ -58,3 +59,4 @@ api_v1_router.include_router(portal_router)
 api_v1_router.include_router(vendor_portal_router)
 api_v1_router.include_router(bpm_router)
 api_v1_router.include_router(lowcode_router)
+api_v1_router.include_router(ai_router)

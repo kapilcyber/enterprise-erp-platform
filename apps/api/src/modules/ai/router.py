@@ -1,0 +1,80 @@
+"""AI Platform module router aggregation — Phase 1."""
+
+from fastapi import APIRouter
+
+from modules.ai.routers import (
+    agent_versions_router,
+    agents_router,
+    assistants_router,
+    cache_entries_router,
+    configurations_router,
+    context_packages_router,
+    conversation_memories_router,
+    conversation_messages_router,
+    conversations_router,
+    cost_records_router,
+    credentials_router,
+    embeddings_router,
+    evaluations_router,
+    feedbacks_router,
+    gateway_policies_router,
+    guardrail_policies_router,
+    invoke_router,
+    knowledge_bases_router,
+    knowledge_chunks_router,
+    knowledge_sources_router,
+    models_router,
+    moderation_policies_router,
+    multimodal_profiles_router,
+    prompt_templates_router,
+    prompt_variables_router,
+    prompt_versions_router,
+    providers_router,
+    rate_limit_policies_router,
+    routing_rules_router,
+    runtime_router,
+    sessions_router,
+    skills_router,
+    tool_versions_router,
+    tools_router,
+    usage_records_router,
+    vector_indexes_router,
+)
+
+ai_router = APIRouter(prefix="/ai")
+ai_router.include_router(providers_router)
+ai_router.include_router(models_router)
+ai_router.include_router(credentials_router)
+ai_router.include_router(configurations_router)
+ai_router.include_router(prompt_templates_router)
+ai_router.include_router(prompt_versions_router)
+ai_router.include_router(prompt_variables_router)
+ai_router.include_router(gateway_policies_router)
+ai_router.include_router(routing_rules_router)
+ai_router.include_router(guardrail_policies_router)
+ai_router.include_router(moderation_policies_router)
+ai_router.include_router(rate_limit_policies_router)
+ai_router.include_router(assistants_router)
+ai_router.include_router(sessions_router)
+ai_router.include_router(conversations_router)
+ai_router.include_router(conversation_messages_router)
+ai_router.include_router(conversation_memories_router)
+ai_router.include_router(context_packages_router)
+ai_router.include_router(runtime_router)
+ai_router.include_router(invoke_router)
+ai_router.include_router(usage_records_router)
+ai_router.include_router(cost_records_router)
+ai_router.include_router(cache_entries_router)
+ai_router.include_router(knowledge_bases_router)
+ai_router.include_router(knowledge_sources_router)
+ai_router.include_router(knowledge_chunks_router)
+ai_router.include_router(embeddings_router)
+ai_router.include_router(vector_indexes_router)
+ai_router.include_router(tools_router)
+ai_router.include_router(tool_versions_router)
+ai_router.include_router(skills_router)
+ai_router.include_router(agents_router)
+ai_router.include_router(agent_versions_router)
+ai_router.include_router(evaluations_router)
+ai_router.include_router(feedbacks_router)
+ai_router.include_router(multimodal_profiles_router)

@@ -35,6 +35,7 @@ import modules.service.models  # noqa: F401 — register ORM metadata
 import modules.vendor_portal.models  # noqa: F401 — register ORM metadata
 import modules.bpm.models  # noqa: F401 — register ORM metadata
 import modules.lowcode.models  # noqa: F401 — register ORM metadata
+import modules.ai.models  # noqa: F401 — register ORM metadata
 from core.config import settings
 from database.base import Base
 
