@@ -50,6 +50,7 @@ celery_app.autodiscover_tasks(
         "modules.bpm",
         "modules.lowcode",
         "modules.ai",
+        "modules.devportal",
     ],
     related_name="tasks",
     force=True,

@@ -7,6 +7,7 @@ from modules.analytics.router import analytics_router
 from modules.asset.router import asset_router
 from modules.bpm.router import bpm_router
 from modules.crm.router import crm_router
+from modules.devportal.router import devportal_router
 from modules.document.router import document_router
 from modules.ecommerce.router import ecommerce_router
 from modules.finance.router import finance_router
@@ -60,3 +61,4 @@ api_v1_router.include_router(vendor_portal_router)
 api_v1_router.include_router(bpm_router)
 api_v1_router.include_router(lowcode_router)
 api_v1_router.include_router(ai_router)
+api_v1_router.include_router(devportal_router)

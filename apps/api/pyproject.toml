@@ -121,6 +121,7 @@ module = [
     "modules.bpm.*",
     "modules.lowcode.*",
     "modules.ai.*",
+    "modules.devportal.*",
     "security.jwt",
     "security.password",
     "security.rbac",

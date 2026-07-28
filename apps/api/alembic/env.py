@@ -9,9 +9,12 @@ from sqlalchemy import engine_from_config, pool
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
+import modules.ai.models  # noqa: F401 — register ORM metadata
 import modules.analytics.models  # noqa: F401 — register ORM metadata
 import modules.asset.models  # noqa: F401 — register ORM metadata
+import modules.bpm.models  # noqa: F401 — register ORM metadata
 import modules.crm.models  # noqa: F401 — register ORM metadata
+import modules.devportal.models  # noqa: F401 — register ORM metadata
 import modules.document.models  # noqa: F401 — register ORM metadata
 import modules.ecommerce.models  # noqa: F401 — register ORM metadata
 import modules.finance.models  # noqa: F401 — register ORM metadata
@@ -21,6 +24,7 @@ import modules.helpdesk.models  # noqa: F401 — register ORM metadata
 import modules.hr.models  # noqa: F401 — register ORM metadata
 import modules.integration.models  # noqa: F401 — register ORM metadata
 import modules.inventory.models  # noqa: F401 — register ORM metadata
+import modules.lowcode.models  # noqa: F401 — register ORM metadata
 import modules.manufacturing.models  # noqa: F401 — register ORM metadata
 import modules.master_data.models  # noqa: F401 — register ORM metadata
 import modules.organization.models  # noqa: F401 — register ORM metadata
@@ -33,9 +37,6 @@ import modules.recruitment.models  # noqa: F401 — register ORM metadata
 import modules.sales.models  # noqa: F401 — register ORM metadata
 import modules.service.models  # noqa: F401 — register ORM metadata
 import modules.vendor_portal.models  # noqa: F401 — register ORM metadata
-import modules.bpm.models  # noqa: F401 — register ORM metadata
-import modules.lowcode.models  # noqa: F401 — register ORM metadata
-import modules.ai.models  # noqa: F401 — register ORM metadata
 from core.config import settings
 from database.base import Base
 
