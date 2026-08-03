@@ -122,6 +122,7 @@ module = [
     "modules.lowcode.*",
     "modules.ai.*",
     "modules.devportal.*",
+    "modules.monitoring.*",
     "security.jwt",
     "security.password",
     "security.rbac",

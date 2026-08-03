@@ -51,6 +51,7 @@ celery_app.autodiscover_tasks(
         "modules.lowcode",
         "modules.ai",
         "modules.devportal",
+        "modules.monitoring",
     ],
     related_name="tasks",
     force=True,

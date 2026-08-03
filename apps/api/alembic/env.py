@@ -27,6 +27,7 @@ import modules.inventory.models  # noqa: F401 — register ORM metadata
 import modules.lowcode.models  # noqa: F401 — register ORM metadata
 import modules.manufacturing.models  # noqa: F401 — register ORM metadata
 import modules.master_data.models  # noqa: F401 — register ORM metadata
+import modules.monitoring.models  # noqa: F401 — register ORM metadata
 import modules.organization.models  # noqa: F401 — register ORM metadata
 import modules.payroll.models  # noqa: F401 — register ORM metadata
 import modules.portal.models  # noqa: F401 — register ORM metadata

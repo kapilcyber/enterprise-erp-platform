@@ -20,6 +20,7 @@ from modules.inventory.router import inventory_router
 from modules.lowcode.router import lowcode_router
 from modules.manufacturing.router import manufacturing_router
 from modules.master_data.router import master_data_router
+from modules.monitoring.router import monitoring_router
 from modules.organization.router import organization_router
 from modules.payroll.router import payroll_router
 from modules.portal.router import portal_router
@@ -62,3 +63,4 @@ api_v1_router.include_router(bpm_router)
 api_v1_router.include_router(lowcode_router)
 api_v1_router.include_router(ai_router)
 api_v1_router.include_router(devportal_router)
+api_v1_router.include_router(monitoring_router)
